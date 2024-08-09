@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+}
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.item-centre{
+    align-items: center;
+}
+.left{
+    width: 25vw;
+}
+.right{
+    width: 75vw;
+}
+.home ul li{
+    gap: 15px;
+    display: flex;
+    list-style: none;
+    width: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.buttons{
+    width: 190px;
+}
+.invert{
+    /*invert the colour*/
+    filter: invert(1);
+}
+.bg-gray{
+    background-color: #121212;
+}
+.m1{
+    margin: 5px;
+}
+.rounded{
+    border-radius: 7px;
+}
+.home{
+    padding: 10px;
+    
+}
+
+
+
+.p1{
+    padding: 10px;
+}
+.heading{
+    gap: 15px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-size: 13px;
+    align-items: center;
+}
+.heading img{
+    width: 30px;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: gray;
+    gap: 13px;
+    position: absolute;
+    bottom: 0px;
+}
+.footer a{
+    color: gray;
+   
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    
+
+}
+.header > *{
+    padding: 20px;
+}
+.right{
+    margin: 5px 0;
+    position: relative;
+   
+}
+.buttons{
+    display: flex;
+    
+}
+.spotify-playlist h1{
+    padding: 30px 15px;
+}
+.container2{
+    padding: 0px 15px;
+    font-size: smaller;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 65vh;
+}
+.container2 img{
+    width: 150px;
+    border-radius: 10px;
+    
+
+}   
+.card{
+    position: relative;
+    background-color: #252525;
+    width: calc(100% / 6 - 20px); /* Adjust width to fit 6 cards in one line, with gap included */
+    transition: all 1s;
+    
+}
+.card:hover{
+    background-color: rgb(115, 112, 112);
+    cursor: pointer;
+}
+.play {
+    right: 11px;
+    top: 98px;
+    position: absolute;
+    border-radius: 50px;
+    background-color: #1fdf64;
+    display: inline-block;
+    padding: 5px;
+   
+    
+}
+.card .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.3s ease; /* Transition for smooth effect */
+}
+
+.card:hover .play {
+    opacity: 1; /* Change opacity to 1 on hover */
+}
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;  /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+    background: #2b2b2b;  /* Dark background for the scrollbar track */
+    border-radius: 10px;  /* Rounded corners for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;     /* Dark grey color for the scrollbar thumb */
+    border-radius: 10px;  /* Rounded corners for the scrollbar thumb */
+    border: 3px solid #2b2b2b; /* Add some space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;     /* Lighter grey color when hovering over the thumb */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;           /* Thin scrollbar */
+    scrollbar-color: #444 #2b2b2b;   /* Thumb color and track color */
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #2b2b2b;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 10px;
+    border: 3px solid #2b2b2b;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.buttons >*{
+    margin: 0 12px;/*>* means all imm child of button class*/
+}
+.signbtn{
+    background-color: black;
+    color: rgb(125, 117, 117);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 21px;
+    width: 79px;
+}
+.signbtn:hover{
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+}
+.logbtn{
+    background-color: white;
+    color: black;
+    border-radius: 21px;
+    width: 79px;
+    cursor: pointer;
+    
+    padding: 10px 14px;
+
+}
+.logbtn:hover{
+    
+        background-color: white;
+        color: black;
+        border-radius: 21px;
+        width: 81px;
+        cursor: pointer;
+        padding: 10px;
+        font-weight: bold;
+    
+    
+}
+
+.playbuttons{
+    height: 40px;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    width: 80vw;
+    gap: 50px;
+    background-color: #333232;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+.songlist ul{
+    padding: 0 12px;
+}
+.songlist ul li{
+    list-style: decimal;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border-radius: 5px;
+    border: 2px solid rgb(79, 77, 77);
+    padding: 13px;
+    margin: 12px 0;
+    justify-content: space-between;
+}
+.hamburger{
+    display: none;
+    height: 30px;
+    width: 60px;
+}
+.songlist .info{
+    width: 344px;
+}
+.songlist{
+    height: 400px;
+    overflow: auto;
+}
+.seekbar{
+    height: 3px;
+    width: 80vw;
+    background-color: white;
+    position: fixed;
+    bottom:  14px;
+    cursor: pointer;
+
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    bottom: 8px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.playbuttons img{
+    cursor: pointer;
+}
+.songinfo{
+    position: fixed;
+    bottom: 30px;
+}
+.songtime{
+    position: fixed;
+    bottom: 30px;
+}
+.hamburgercont{
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+
+
+/*responsivenss*/
+@media (max-width: 851px) {
+    /* … */
+    .left{
+       
+        position: absolute;
+        left: -110%;
+        transition: all 0.3s;
+        width: 300px;
+        z-index: 1;
+    }
+    .right{
+        width: 100vw;
+    }
+    .playbuttons{
+        width: 88vw;
+    }
+    .seekbar{
+        width: 90%;
+    }
+    .container2{
+        margin: 0;
+        gap: 75px;
+    }
+   
+    .hamburger{
+        display: block;
+    }
+  }
+  .cross{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  
+
+/*async function getsongs(){
+
+
+    let a = await fetch("http://127.0.0.1:3000/songs/")
+    let response= await a.text()
+    console.log(response)
+    let div=document.createElement("div")
+    div.innerHTML=response
+    let as=div.getElementsByTagName("a")
+    
+    let songs=[];
+    for (let index = 0; index < as.length; index++) {
+        const element = as[index];
+        if(element.href.endsWith(".mp3")){
+            songs.push(element.href.split("/songs/")[1])
+        }
+        
+    }
+    return songs
+    }   
+    const playmusic = (track)=>{
+        let audio=new Audio("/songs/" + track)
+        audio.play()
+    }
+    async function main(){
+    //get playlist of songs
+    let songs=await getsongs()
+    console.log(songs)
+    let songul = document.querySelector(".songlist").getElementsByTagName("ul")[0]
+    for (const song of songs) {
+        songul.innerHTML= songul.innerHTML + `<li>
+                            <img class="invert" src="music.svg">
+                            <div class="info">
+                                <div>${song.replaceAll("%20"," ")}</div>
+                                <div>Artist</div>
+                            </div>
+                            <div class="playnow">
+
+                            
+                            <img class="invert" src="play.svg">
+                            </div>
+                        </li>`
+        // `<li> ${song.replaceAll("%20"," ")} </li>`//
+    }
+   Array.from (document.querySelector(".songlist").getElementsByTagName("li")).forEach(e=>{
+    e.addEventListener("click",element=>{
+        console.log(e.querySelector(".info").firstElementChild.innerHTML)
+        playmusic((e.querySelector(".info").firstElementChild.innerHTML.trim()))
+    })
+  
+   })
+   
+    
+    //its a client side project so we are not bringing songs from server with api
+    
+    //play first song
+    if(songs.length>0){
+
+    
+    var audio = new Audio(songs[0]);
+    audio.play();
+    audio.addEventListener("loadeddata",()=>{
+        let duration=audio.duration;
+        //to add user interactivity
+        console.log(audio.duration,audio.currentSrc,audio.currentTime)
+        //add button so when clicked song plays
+
+    })
+    }
+    
+    } 
+    main() */
